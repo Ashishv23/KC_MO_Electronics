@@ -1,0 +1,124 @@
+@media screen and (width: 768px) {
+  .side_menu ul li,
+    .social_sidemenu ul li {
+    height: 85.4px;
+  }
+
+  .side_menu ul li a,
+    .social_sidemenu ul li a {
+    font-size: 17px;
+  }
+
+  .cover-title {
+    margin-right: 0px;
+  }
+
+  .f-nav {
+    width: auto;
+  }
+
+  .nav .social_menu_fixed li {
+    margin-top: 8px;
+    margin-left: 1px;
+    margin-right: 7px;
+  }
+    #testimonial .carousel {
+    height: 771px !important;
+  }
+  .nav ul li {
+    float: left;
+    margin-top: 12px;
+        /* padding: 3px 20px; */
+    margin-left: 5px;
+        /* border-right: 1px solid #ACACAC; */
+    padding-left: 14px;
+    padding-right: 5px;
+  }
+  a.send_btn {
+    margin-left: 201px;
+}
+
+  .service_img img {
+    height: 100%;
+    width: 100%;
+  }
+
+  #schedule {
+    background-size: cover;
+  }
+
+  .form-group img {
+    width: 100%;
+  }
+
+  #header .header_right li {
+    margin-right: 5px;
+  }
+  .cover-title {
+    position: absolute;
+    right: 15px;
+    margin-top: 60%;
+  }
+  .best_expert {
+    padding-top: 85px;
+}
+.service .service_img {
+    height: 70px;
+    width: 60px;
+}
+.best_expert h3 {
+    top: 98px;
+    font-size: 21px;
+}
+  .toggle_hide {
+    display: block;
+    position: fixed;
+    top: 128px;
+    right: 20px;
+    z-index: 999;
+    color: #fff;
+  }
+
+  a.send_btn {
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 207px;
+  }
+
+  section#fixed-menu {
+    display: none;
+  }
+
+  .slider {
+    height: 750px !important;
+  }
+
+  .testimonial_left {
+    border-right: none;
+  }
+
+  #testimonial h1 {
+    font-size: 105px;
+  }
+
+  #team .toggle_hide {
+    display: block;
+    position: absolute;
+    top: 128px;
+    right: 20px;
+    color: #000000;
+    z-index: 999;
+  }
+
+  #team .sidenav {
+    display: none;
+  }
+
+  .about_service_wrapper ul li {
+    width: 100%;
+    float: left;
+  }
+  .blog_detail p {
+    text-align: justify;
+}
+}

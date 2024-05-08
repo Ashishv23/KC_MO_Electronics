@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>jQuery NOSlideShow Plugin Demo</title>
+<link href="css/main.css" rel="stylesheet">
+<link href="css/main.structure.css" rel="stylesheet">
+<link href="css/provisional.css" rel="stylesheet">
+</head>
+
+<body>
+<style>
+.wrapper {
+
+width:150px;
+height:300px;
+
+}
+
+.text-wrapper {
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:200px;
+}
+</style>
+<div class="wrapper">
+  <div class="text-wrapper">
+    <div class="cover-body">
+      <div class="cover-body-inner">
+        <div class="cover-title"> <a href="#" class="link-item title">NOSlideShow.js</a> </div>
+        <div class="cover-description">
+          <p>A Background Slideshow Plugin</p>
+          <p class="cover-subtitle"></p>
+        </div>
+        <div class="cover-actions"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="cover-img cover-img__b"></div>
+  <div class="cover-img cover-img__a"></div>
+</div>
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script> 
+<script src="js/NOSlideShow.js"></script> 
+<script>
+
+var mySlideShow = new SlideShow('projectSlides');
+    mySlideShow.container.label = $(".cover-subtitle");
+    mySlideShow.container.image = $(".cover-img.cover-img__a");
+    mySlideShow.container.background = $(".cover-img.cover-img__b");
+
+  // Set Slides.
+  mySlideShow.setSlides([{name: 'First Slide', image: 'https://unsplash.it/1800/1600/?random'},
+                         {name: 'Second Slide', image: 'https://unsplash.it/1800/1200/?random'},
+                         {name: 'Third Slide', image: 'https://unsplash.it/1800/1500/?random'},
+                         {name: 'Fouth Slide', image: 'https://unsplash.it/1800/1400/?random'}
+						            ]);
+
+  // Display first slide.
+  mySlideShow.displaySlide();
+
+  // Loop slides.
+  var showInterval = setInterval("mySlideShow.advanceSlide()", 3000);
+
+/*
+// Layout
+function adjustCoverImage() {
+  var width = $(".cover").width();
+  var height = width * 0.50;
+  $(".cover").height(height+'px');
+}
+
+$(window).resize(function() { 
+  adjustCoverImage();
+});
+
+$(document).ready(function() { 
+  adjustCoverImage();
+});*/
+
+</script>
+</body><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

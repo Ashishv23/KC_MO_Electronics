@@ -1,0 +1,58 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#home_projects a:hover {
+    text-decoration: none;
+    color: #071139;
+}
+
+#home_projects {
+    background: #fff;
+    padding: 70px 0px;
+}
+
+#home_projects h2 {
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+#projects_cats {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    padding-right: 50px;
+}
+
+#projects_cats li {
+    margin: 0px 0px 20px;
+    padding-left: 60px;
+    position: relative;
+}
+
+#projects_cats li.active a:before {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #ff9c00;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+}
+
+#projects_cats li a {
+    color: #9196a7;
+}
+
+#projects_cats li.active a {
+    color: #071139;
+}
+
+#projects_images img {
+    margin-bottom: 5px;
+    margin-right: 5px;
+    width: 24%;
+    height: 205px;
+    float: left;
+}
